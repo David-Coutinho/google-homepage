@@ -1,0 +1,201 @@
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+body {
+  display: flex;  
+  flex-direction: column;
+  background: #fff;
+  margin: 0;
+  color: #202124;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header nav ul {
+  margin-top: 17px;
+  margin-bottom: 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+header nav ul li a{
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  opacity: .87;
+}
+header nav ul li a:visited {
+  text-decoration: none;
+}
+header nav ul li a:not(#login):hover {
+  text-decoration: underline;
+}
+#google-apps {
+  background-image: url(//ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+  background-position: -132px -38px;
+  background-size: 528px 68px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  opacity: .55;
+  display: inline-block;
+  height: 30px;
+  line-height: normal;
+  outline-color: rgb(0, 0, 0);
+  outline-style: none;
+  outline-width: 0px;
+  text-align: left;
+  vertical-align: middle;
+  width: 30px;
+}
+#google-apps:hover {
+  opacity: .85;
+}
+#login{
+  display: inline-block;
+  color: #fff !important;
+  cursor: default;
+  border: 1px solid rgb(66,133,244);
+  border-radius: 2px;
+  font-weight: bold;
+  outline: none;
+  background: -webkit-linear-gradient(top, rgb(67, 135, 253),rgb(70,131,234));
+  line-height: 28px;
+  padding: 0 12px;
+  text-decoration: none;
+}
+#login:hover {
+  box-shadow:0 1px 1px rgba(32,33,36,.28);
+}
+#login:active {
+  background: -webkit-linear-gradient(top, rgb(57, 113, 209),rgb(60,109, 190));
+}
+footer {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+footer nav ul div li, footer nav ul div li a {
+  list-style: none;
+  color: rgba(0, 0, 0, .54);
+  font-size: 14px;
+  text-decoration: none;
+}
+.bottom-navigation-bar__location li{
+  font-size: 15px;
+}
+footer nav ul div:not(.bottom-navigation-bar__location) a:hover{
+  text-decoration: underline;
+}
+footer nav ul:visited{
+  text-decoration: none;
+}
+footer nav ul {
+  margin: 0;
+  padding: 0;
+}
+footer nav ul div {
+  border-top: 1px solid #dadce0;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  margin: 0;
+}
+.bottom-navigation-bar__location, .bottom-navigation-bar__settings span{
+  display: flex;
+  gap: 27px;
+  margin: 0 30px;
+}
+#main-logo {
+  border: none;
+  padding-top: 109px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 92px;
+  width: 272px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.action-buttons-field {
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  padding: 0;
+  padding-top: 18px;
+}
+button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0px 16px;
+  line-height: 27PX;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  border: 1px solid #dadce0;
+}
+.data-entry-field {
+  border-radius: 24px;
+  margin: 1px;
+  border: 1px solid #dfe1e5;
+  padding: 2.5px 8px 1.5px 14px;
+  height: 39px;
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.data-entry-field:hover {
+  box-shadow:0 1px 6px rgba(32,33,36,.28);
+  border-color:rgba(223,225,229,0);
+}
+#search-logo{
+  color: #9aa0a6;
+  opacity: .35;
+  height: 20px;
+  width: 20px;
+}
+.data-entry-field input {
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  color: rgba(0, 0, 0, .87);
+  cursor: text;
+  font: 16px arial,sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  width: 427px;
+}
+#keyboard-logo {
+  cursor: pointer;
+}
+#voice-logo{
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  padding-right: 10px;
+}
